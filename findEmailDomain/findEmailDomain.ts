@@ -1,8 +1,4 @@
-function findEmailDomain(address: string): string {
-    const lastAtIndex = address.lastIndexOf('@');
-
-    return address.slice(lastAtIndex + 1, address.length);
-}
+function findEmailDomain(address: string): string {}
 
 console.log(findEmailDomain('prettyandsimple@example.com'));
-console.log(findEmailDomain('<>[]:,;@\"!#$%&*+-/=?^_{}| ~.a\"@example.org'));
+console.log(findEmailDomain('<>[]:,;@"!#$%&*+-/=?^_{}| ~.a"@example.org'));
